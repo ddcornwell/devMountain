@@ -96,8 +96,9 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     // This method lets you configure a view controller before it's presented.
-     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if saveButton === self {
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+   
+        if saveButton === sender {
             let name = nameTextField.text ?? ""
             let photo = photoImageView.image
             let rating = ratingControl.rating
@@ -109,9 +110,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     // MARK: Navigation
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
-    
-
-        // Hide the keyboard
+           // Hide the keyboard
         nameTextField.resignFirstResponder()
         
         let imagePickerController = UIImagePickerController()

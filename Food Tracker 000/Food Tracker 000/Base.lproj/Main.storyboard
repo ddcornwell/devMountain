@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ypk-34-Di2" id="XpQ-zD-zf2">
-                                    <frame key="frameInset" width="375" height="89"/>
+                                    <frame key="frameInset" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="SNk-Sk-tGi">
@@ -86,7 +86,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="rUQ-L4-pJz">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="rUQ-L4-pJz">
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rUQ-L4-pJz" secondAttribute="height" multiplier="1:1" id="BHD-aJ-vY9"/>
@@ -115,12 +115,12 @@
                     <navigationItem key="navigationItem" title="Meal" id="908-ln-DiL">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Os1-gV-zAs">
                             <connections>
-                                <action selector="cancel:" destination="BYZ-38-t0r" id="mDU-gZ-ioS"/>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="2Vu-dg-arH"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="fX9-Go-OQR">
                             <connections>
-                                <segue destination="cGD-qQ-taF" kind="unwind" unwindAction="unwindToMealListWithSender:" id="D8m-Gg-iPS"/>
+                                <segue destination="cGD-qQ-taF" kind="unwind" unwindAction="unwindToMealListWithSender:" id="qTy-v0-IZI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -128,25 +128,25 @@
                         <outlet property="nameTextField" destination="jWg-Ak-ds3" id="4SY-si-E00"/>
                         <outlet property="photoImageView" destination="rUQ-L4-pJz" id="doJ-qO-oAs"/>
                         <outlet property="ratingControl" destination="k0J-vq-Pax" id="DUs-S1-XEk"/>
-                        <outlet property="saveButton" destination="fX9-Go-OQR" id="GCR-LR-WEh"/>
+                        <outlet property="saveButton" destination="fX9-Go-OQR" id="hW4-MD-Ncp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="cGD-qQ-taF" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="f1b-Bj-xjx">
                     <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="gzH-Hv-4zI"/>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="f7o-Pj-8n2"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2004" y="-376.46176911544228"/>
+            <point key="canvasLocation" x="2348" y="-382"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eue-IA-OtO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nW3-rw-wBa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QdQ-eO-PuH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QdQ-eO-PuH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -164,7 +164,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M6k-Rm-0cC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sXR-Ig-dcT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sXR-Ig-dcT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
